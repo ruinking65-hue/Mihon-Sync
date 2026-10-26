@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mihon Sync</title>
+  <meta name="description" content="A personal build of the Mihon manga reader that syncs your library and reading progress through your own Google Drive.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Mihon Sync</h1>
+    <p class="lead">A personal build of the <a href="https://mihon.app">Mihon</a> manga reader that keeps your
+      library in step across your Android devices, using your own Google Drive.</p>
+
+    <h2>What it syncs</h2>
+    <ul>
+      <li>Which manga are in your library, and their categories</li>
+      <li>Read and unread chapters, bookmarks and the last page read</li>
+      <li>Reading history</li>
+      <li>Tracker entries (AniList, MyAnimeList and others). Tracker sign-ins are not synced.</li>
+    </ul>
+
+    <h2>How it works</h2>
+    <p>When you sign in with Google, the app creates a folder called <code>Mihon</code> in your Google Drive and
+      keeps small JSON files there: one listing your library and one per manga. Each device reads and updates those
+      files, so changes made on one device reach the others.</p>
+    <p>The app asks only for Google's <code>drive.file</code> permission, which lets it see and change the files
+      it created itself. It cannot see anything else in your Drive.</p>
+    <p>There is no server: your data goes only between your devices and your Google Drive.</p>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </main>
+  <footer>
+    <p>Mihon Sync is an unofficial build and is not affiliated with the Mihon project.</p>
+  </footer>
+</body>
+</html>
